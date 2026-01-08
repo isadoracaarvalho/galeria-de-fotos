@@ -1,8 +1,9 @@
 import './assets/styles/reset.css';
 
 import Header from './components/Header';
-import SearchBar from './components/SearchBar'
+import SearchBar from './components/searchBar';
 import Gallery from './components/Gallery';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
     <>
       <Header />
       <SearchBar />
-      <Gallery />      
+      <Gallery /> 
+      <Footer />     
     </>
   )
 }
