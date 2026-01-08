@@ -3,7 +3,7 @@ import '../assets/styles/gallery.css';
 import Photo from './photo';
 import { searchPhotos } from '../services/pexels';
 
-export default function Gallery() {
+export default function Gallery({search}) {
     const [photos, setPhotos] = useState([]);
 
     useEffect(() => {
@@ -15,14 +15,16 @@ export default function Gallery() {
     loadPhotos();
   }, []);
 
+    const filterPic = photos.filter(photo => photo.alt.toLowerCase().includes(search.toLowerCase()))
+
     return (
         <section className="gallery">
         <div className="gallery-grid">
-            {photos.map(p => 
+            {filterPic.map(p => 
                 <Photo
                     key={p.id}
                     imgUrl={p.src.medium}
-                    imgTitle={p.photographer} 
+                    imgTitle={p.alt}
                 />
             )}
         </div>

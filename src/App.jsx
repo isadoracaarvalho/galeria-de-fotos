@@ -2,17 +2,20 @@ import './assets/styles/reset.css';
 
 import Header from './components/Header';
 import SearchBar from './components/searchBar';
-import Gallery from './components/Gallery';
+import Gallery from './components/gallery';
 import Footer from './components/Footer';
+import React from 'react';
 
 
 function App() {
 
+  const [search, setSearch] = React.useState('');
+
   return (
     <>
       <Header />
-      <SearchBar />
-      <Gallery /> 
+      <SearchBar search={search} setSearch={setSearch} />
+      <Gallery search={search} /> 
       <Footer />     
     </>
   )
