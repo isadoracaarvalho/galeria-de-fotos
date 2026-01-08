@@ -20,13 +20,16 @@ export default function Gallery({search}) {
     return (
         <section className="gallery">
         <div className="gallery-grid">
-            {filterPic.map(p => 
+            {filterPic.length === 0 ? (
+                <p>Nenhuma foto encontrada</p>
+            ) : (
+            filterPic.map(p => 
                 <Photo
                     key={p.id}
                     imgUrl={p.src.medium}
                     imgTitle={p.alt}
                 />
-            )}
+            ))}
         </div>
         </section>
     );
