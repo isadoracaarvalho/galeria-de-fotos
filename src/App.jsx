@@ -1,8 +1,8 @@
 import './assets/styles/reset.css';
 
 import Header from './components/Header';
-import SearchBar from './components/searchBar';
-import Gallery from './components/gallery';
+import SearchBar from './components/SearchBar'
+import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import React from 'react';
 
