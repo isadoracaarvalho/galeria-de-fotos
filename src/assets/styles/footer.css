@@ -15,3 +15,7 @@
     color: #555;
     text-align: center;
 }
+
+.footer-container a {
+    text-decoration: none;
+}
