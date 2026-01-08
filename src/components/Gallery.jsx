@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import '../assets/styles/gallery.css';
-import Photo from './photo';
+import Photo from './Photo'
 import { searchPhotos } from '../services/pexels';
 
 export default function Gallery({search}) {
