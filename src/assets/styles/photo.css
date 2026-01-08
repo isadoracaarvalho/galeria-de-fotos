@@ -30,7 +30,7 @@
     font-weight: 500;
     color: #ffffff;
 
-    white-space: nowrap;
+    white-space: wrap;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
