@@ -1,0 +1,37 @@
+.photo-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    background-color: #777777;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.photo-container:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.photo-container img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.photo-title {
+    padding: 0.75rem 1rem;
+}
+
+.photo-title h3 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ffffff;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
